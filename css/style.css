@@ -1,0 +1,35 @@
+.card {
+  margin: 1.5rem;
+}
+.main {
+  width: calc(100% - 16.5rem);
+  margin-left: 16.5rem;
+  margin-right: 0;
+  overflow-x: hidden;
+}
+.sidebar {
+  width: 15rem;
+  position: fixed;
+  height: calc(100vh - 3rem);
+  top:0;
+  left:0;
+}
+.sidebar a {
+  text-decoration: none;
+}
+html {scroll-behavior: smooth;}
+@media (max-width: 768px) {
+  .sidebar {display: none;}
+  img {width: 300px!important; margin: 0 auto;}
+  .main {
+      margin-left: 0px;
+      margin-right: 0px;
+      width: 100%
+    }
+  h1 {font-size: 3rem!important;}
+  ol, ul {
+    text-align: start;
+    margin: 0 auto;
+  }
+  body {text-align: center;}
+}
